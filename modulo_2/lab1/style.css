@@ -1,4 +1,6 @@
-	body{
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+body{
 	color: #333;
 	font-family: Arial, "Monaco", sans-serif;
 	font-size: 16px;
@@ -11,7 +13,7 @@
 
 #container header{
 	background: #DDD;
-	border-bottom: 1px solid; 
+	border-bottom: 1px solid; 	
 }
 
 #container header h1{
@@ -57,10 +59,26 @@
 
 	}
 
-#container header p{
-	color: blue;
+    #container header p{
+	    color: blue;
 		font-size: 2em;
 		margin: 1em;
 	}
 
 }
+
+@media screen and (max-width: 360px){
+	#container header h1{		
+		color: green;
+		font-family: 'Shadows Into Light', cursive;
+	}
+
+}
+
+@media screen and (max-width: 320px){
+	#container header h1{
+		color: blue ;
+		font-family: 'Chewy', cursive;
+	}
+}
+
