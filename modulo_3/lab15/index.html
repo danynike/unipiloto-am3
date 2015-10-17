@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="tech">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="tech_controller">
+		<h1>lenguajes</h1>		
+		<ul>
+			<li ng-repeat="languaje in languajes">{{ languaje.lastname }}</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+	angular.module('tech', [])
+	       .controller('tech_controller', ['$scope', function($scope){
+	       	$scope.languajes = [
+                {
+                    firstname: "JAVA",
+                    lastname: "Java"
+                },
+                {
+                    firstname: "VISUAL",
+                    lastname: "C++"
+                },
+                {
+                    firstname: "JAVASCRIPT",
+                    lastname: "Javascript"
+                },
+                {
+                    firstname: "HTML5",
+                    lastname: "Html5"
+                },
+                {
+                    firstname: "PHP",
+                    lastname: "php"
+                },
+                {
+                    firstname: "PHANTOM",
+                    lastname: "Phantom"
+                }
+            ];
+	       }])
+		
+	</script>
+</body>
+</html>
